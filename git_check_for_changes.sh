@@ -33,7 +33,6 @@ echo "Doing commit ... "
 git commit -m "Auto commit. Date $dateStr."
 rc=$? 
 
-exit 1
 
 if [ $rc = "0" ]; then
     echo "Branch created."
