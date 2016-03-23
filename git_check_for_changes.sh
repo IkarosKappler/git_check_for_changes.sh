@@ -53,7 +53,7 @@ require_clean_work_tree()
  
 # Create a new branch
 dateStr=`date '+%Y%m%d_%H%M%S'`
-branchName='_autobranch_$dateStr'
+branchName=`echo "_autobranch_$dateStr"`
 echo -n "Creating new branch '$branchName' ... "
 git branch $branchName
 git checkout $branchName
