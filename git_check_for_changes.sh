@@ -6,6 +6,9 @@
 #
 # The new branch in merged into the master.
 #
+# @author  Ikaros Kappler
+# @date    2016-03-23
+# @version 1.0.0
 
 
 # Get the number of changes reported by git
@@ -18,7 +21,6 @@ fi
 echo "There are $changeCount changed files."
 
 
- 
 # Create a new branch
 dateStr=`date +"%Y%m%d_%H%M%S"`
 branchName="_autobranch_$dateStr"
@@ -52,5 +54,4 @@ else
     exit $rc
 fi
 
- 
 
