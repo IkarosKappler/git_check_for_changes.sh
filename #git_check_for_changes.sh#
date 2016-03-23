@@ -36,7 +36,7 @@ if [ $rc = "0" ]; then
     echo "Branch created."
     git checkout master
     echo -n "Merge branch into master ... "
-    git merge $branchN
+    git merge $branchName
     rc=$?
     if [ $rc = "0" ]; then
 	echo "Done."
