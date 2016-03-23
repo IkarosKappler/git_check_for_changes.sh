@@ -31,7 +31,7 @@ echo "Adding changed/new files ... "
 git add -A
 echo "Doing commit ... "
 git commit -m "Auto commit. Date $dateStr."
-rc=$?
+rc=$? 
 
 exit 1
 
@@ -39,7 +39,7 @@ if [ $rc = "0" ]; then
     echo "Branch created."
     git checkout master
     echo -n "Merge branch into master ... "
-    git merge $branchName
+    git merge "$branchName"
     rc=$?
     if [ $rc = "0" ]; then
 	echo "Done."
